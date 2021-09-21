@@ -1,0 +1,29 @@
+#Chris Plowman
+#CS151, Dr. Rajeev
+#9/21/21
+#Programming Assignment 1
+
+#ask user for L,W,H of the room
+Length = input("enter the length of the room in feet")
+Length = float(Length)
+Width = input("enter the width of the room in feet")
+Width = float(Width)
+Height = input("enter the height of the room in feet")
+Height = float(Height)
+#calculate the area of the wall and the ceiling
+Wall = (Length * Height)
+Wall = float(Wall)
+Ceiling = (Width * Length)
+Ceiling = float(Ceiling)
+#calculate total area of room and print it
+Area = (Wall * 4) + Ceiling
+Area = float(Area)
+print ("the area of the room is", Area ,"sqrft", sep = " ")
+#Determine the amount of primer and paint needed for the room
+# (note: you have to round because you cant buy a fraction of a bucket)
+primer = (Area / 200)
+primer = round(primer)
+paint = (Area / 350)
+paint = round(paint)
+print ("you will need", primer , "gallons of primer for your room", sep = " ")
+print ("you will need", paint , "gallons of paint for your room", sep = " ")
